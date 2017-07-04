@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 get_trip_by_user() {
     local user="$1"
     local loggedUser=$(get_logged_user)
