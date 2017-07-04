@@ -3,7 +3,7 @@ package org.craftedsw.tripservicekata.user
 import org.craftedsw.tripservicekata.trip.Trip
 import java.util.*
 
-class User {
+open class User {
 
     private val _trips: MutableList<Trip> = ArrayList()
     val trips: List<Trip>
