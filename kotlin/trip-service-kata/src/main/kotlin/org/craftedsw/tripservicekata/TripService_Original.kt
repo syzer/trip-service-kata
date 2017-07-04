@@ -31,5 +31,4 @@ open class TripService_Original {
 
     open fun loggedInUser() = UserSession.instance.loggedUser
 
-
 }
