@@ -18,7 +18,8 @@ open class TripService_Original {
             throw UserNotLoggedInException()
         }
 
-        val isFriend: Boolean = user.friends.contains(loggedUser)
+        val isFriend: Boolean = loggedUser!!.isFriend(user)
+
         if (isFriend) {
             tripList = TripDAO.findTripsByUser(user)
         }
